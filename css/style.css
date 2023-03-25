@@ -1,0 +1,221 @@
+:root {
+    --dark-mode-elements: hsl(209, 23%, 22%);
+    --dark-bg: hsl(207, 26%, 17%);
+    --light-mode-text: hsl(200, 15%, 8%);
+    --light-mode-input: hsl(0, 0%, 52%);
+    --light-bg: hsl(0, 0%, 98%);
+    --dark-mode-text: hsl(0, 0%, 100%);
+    --light-mode-elements: hsl(0, 0%, 100%);
+    --light-shadow: rgb(223, 223, 223);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    background-color: var(--light-bg);
+    color: var(--light-mode-text);
+}
+
+.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-mode-text);
+}
+
+.button {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: var(--light-mode-text);
+    background-color: var(--light-bg);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 2px var(--light-shadow);
+}
+
+body.dark-mode .button {
+    color: var(--dark-mode-text);
+    background-color: var(--dark-mode-elements);
+    box-shadow: 0px 2px 3px -2px var(--light-mode-text);
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0px 2px 3px -2px var(--light-shadow);
+    background-color: var(--light-mode-elements);
+}
+
+body.dark-mode header {
+    background-color: var(--dark-mode-elements);
+    box-shadow: 0px 2px 3px -2px var(--light-mode-text);
+}
+
+.header-title {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+p.icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.header-theme-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.icon {
+    padding: 0 4px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filters input {
+    width: 300px;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px -2px var(--light-shadow);
+    background-color: var(--light-mode-elements);
+}
+
+body.dark-mode .filters input {
+    color: var(--dark-mode-text);
+    background-color: var(--dark-mode-elements);
+    box-shadow: 0px 2px 3px -2px var(--light-mode-text);
+}
+
+.filters select {
+    width: 180px;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px -2px var(--light-shadow);
+    background-color: var(--light-mode-elements);
+}
+
+body.dark-mode .filters select {
+    color: var(--dark-mode-text);
+    background-color: var(--dark-mode-elements);
+    box-shadow: 0px 2px 3px -2px var(--light-mode-text);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 0 45px;
+}
+
+.anchor-country {
+    color: var(--light-mode-text);
+    text-decoration: none;
+}
+
+.country-div {
+    width: 100%;
+    max-height: 600px;
+    min-width: 180px;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 2px 3px -2px var(--light-shadow);
+    background-color: var(--light-mode-elements);
+}
+
+body.dark-mode .country-div {
+    color: var(--dark-mode-text);
+    background-color: var(--dark-mode-elements);
+    box-shadow: 0px 2px 3px -2px var(--light-mode-text);
+}
+
+.container img {
+    width: 100%;
+    aspect-ratio: 6/4;
+    box-shadow: 0px 2px 3px -2px var(--light-shadow);
+}
+
+body.dark-mode .container img {
+    box-shadow: 0px 2px 3px -2px var(--light-mode-text);
+}
+
+.short-info {
+    padding: 15px;
+    font-size: 12px;
+}
+
+.short-info-name {
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.country-dashboard {
+    padding: 60px;
+}
+
+.country-detail {
+    margin: 60px 0;
+    padding: 0;
+    display: flex;
+    height: 320px;
+}
+
+.right-side-dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    padding: 15px 80px;
+}
+
+.large-flag {
+    width: 45%;
+}
+
+.img-flag {
+    width: 100%;
+    aspect-ratio: 10 / 7;
+}
+
+.official-name {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.right-side-info {
+    display: flex;
+
+}
+
+.right-side-column {
+    width: 100%;
+}
+
+.borders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.hidden {
+    display: none;
+}

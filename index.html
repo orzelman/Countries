@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries API</title>
+    <script src="https://kit.fontawesome.com/f226dbcd12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <p class="header-title">
+            Where in the world?
+        </p>
+        <p class="icon">
+            <span class="material-symbols-outlined icon">
+                dark_mode
+            </span>
+            <span class="theme-text">Dark Mode</span>
+        </p>
+    </header>
+    <section class="filters" id="filters">
+        <div><input type="text" maxlength="50" placeholder="🔎 Search fo a country...">
+        </div>
+        <select name="select-region" id="select-region">
+            <option>Select region..</option>
+            <option>Africa</option>
+            <option>Americas</option>
+            <option>Asia</option>
+            <option>Europe</option>
+            <option>Oceania</option>
+        </select>
+    </section>
+    <section class="container">
+    </section>
+    <section class="country-dashboard"></section>
+
+
+
+    <script src="./viewCountry.js"></script>
+    <script src="./index.js"></script>
+    <script src="./rest.js"></script>
+
+</body>
+
+</html>
